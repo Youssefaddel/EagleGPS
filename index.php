@@ -15,9 +15,9 @@ include 'config.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- For Resposive Device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GPS Tracking</title>
+	<title>Eagle GPS Tracking</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.ico">
+	<link rel="icon" type="image/png" sizes="56x56" href="images/icon-eagle.png">
 	<link rel="stylesheet" href="../../../www.w3schools.com/w3css/4/w3.css">
 	<!-- Main style sheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -314,7 +314,7 @@ include 'config.php';
 			</div>
 			<div class="page-middle-banner">
 				<div class="opacity">
-					<dir class="row">
+					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -329,7 +329,7 @@ include 'config.php';
 						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
 
 						</div>
-					</dir>
+					</div>
 				</div> <!-- /.opacity -->
 			</div> <!-- /.page-middle-banner -->
 		</div>
@@ -386,14 +386,13 @@ include 'config.php';
 
 						<div id="partner_logo" class="owl-carousel owl-theme">
 							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
+							<div class="item"><img src="images\ampere-logo.jpg" alt="logo"></div>
 							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
+							<div class="item"><img src="images\ampere-logo.jpg" alt="logo"></div>
 							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
+							<div class="item"><img src="images\ampere-logo.jpg" alt="logo"></div>
 							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
-							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
-							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
-							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
-							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
-							<div class="item"><img src="images\logo\images.png" alt="logo"></div>
+							<div class="item"><img src="images\ampere-logo.jpg" alt="logo"></div>
 							<!-- <div class="item"><img src="images/logo/company2.svg" alt="logo"></div>
 							<div class="item"><img src="images/logo/company4.svg" alt="logo"></div>
 							<div class="item"><img src="images/logo/company1.svg" alt="logo"></div>
@@ -435,7 +434,7 @@ include 'config.php';
 
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
 												aria-hidden="true"></i></div>
-										<a href="mailto:info@mail.com">eagle.co139@gmail.com</a>
+										<a href="eagle.co139@gmail.com">eagle.co139@gmail.com</a>
 
 									</li>
 								</div>
@@ -510,28 +509,35 @@ include 'config.php';
 							<div class="single-input">
 								<select name="subbj" id="subbj" class="css">
 									<option value="">Select Subject*</option>
-									<option value="Interested to Purchase">Interested to Purchase</option>
-									<option value="Interested to Partner">Interested to Partner</option>
-
+									<option value="Interested to Purchase">Request of Quotation</option>
+									<option value="Interested to Partner">Be a partner</option>
 									<option value="Others">Others</option>
 								</select>
 
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+							<div class="single-input">
+								<input type="message" placeholder="Write Your Message Here" name="Message" id="aemail"
+									><span style="color: red" id="valid_aemail"></span>
+							</div>
+						</div>
+						
+
+						<!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-input">
 								<input type="email" placeholder="Alternate Email ID" name="aemail" id="aemail"
 									onkeyup="email_Check(this)"><span style="color: red" id="valid_aemail"></span>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
 								<input type="text" placeholder="Alternate Mobile Number" name="amob" id="amob"
 									onkeyup="chk_phoneno(this)"><span style="color: red" id="valid_amob"></span>
 							</div>
-						</div>
+						</div> -->
 
 
 					</div>
