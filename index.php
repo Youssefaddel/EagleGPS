@@ -1,3 +1,9 @@
+<?php
+require_once('PHPMailer/src/Exception.php');
+require_once('PHPMailer/src/PHPMailer.php');
+require_once('PHPMailer/src/SMTP.php');
+include 'config.php';
+?>
 <!-- images download from pixabay.com -->
 
 <!DOCTYPE html>
@@ -455,6 +461,7 @@
 
 				<!-- Contact Form -->
 				<div class="send-message" style="margin-top: 20px">
+				<form accept-charset="UTF-8" enctype="multipart/form-data" novalidate="" action="index.php" method="post">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
@@ -529,9 +536,8 @@
 
 					</div>
 
-					<center><button class="tran3s p-color-bg custom-button" name="submit" type="button"
-							onclick="Submitform()">Submit</button></center>
-
+					<center><button class="tran3s p-color-bg custom-button" name="submit" type="submit" onclick="Submitform()">Submit</button></center>
+				</form>		
 					<!-- Contact Form Validation Markup -->
 					<!-- Contact alert -->
 					<div class="alert-wrapper" id="alert-success">
@@ -730,3 +736,44 @@
 </body>
 
 </html>
+
+ <!-- header-start-end -->
+ <?php
+    //Create an instance; passing `true` enables exceptions
+
+    try {
+        //Server settings
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host       = $hostConfig;                     //Set the SMTP server to send through
+        $mail->SMTPAuth   = $SMTPAuthConfig;                                   //Enable SMTP authentication
+        $mail->Username   = $usernameConfig;                     //SMTP username
+        $mail->Password   = $passwordConfig;                               //SMTP password
+        $mail->Port       = $portConfig;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->addAddress('info@test.com.eg', 'omar');     //Add a recipient
+    // $mail->addAddress('email', 'name');     //Add a recipient
+    // $mail->addAddress('email', 'name');     //Add a recipient
+
+    if (isset($_POST['submit'])) {
+		echo 'a7a';
+        $mail->setFrom($_POST['email']);
+        //Content
+        $body = "<br>Dear , Admin <br/>";
+        $body .= "<b>You have received a subscription at the BML website and here is the information :-</b> <br/>";
+        $body .= "<b>Email :</b>" . $_POST['email']  . "<br/>";
+
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->Subject = 'subscription';
+            $mail->Body    = $body;
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            $mail->send();
+            echo "<meta http-equiv='refresh' content='0;url=index.php'>";
+            die;
+        }
+    } catch (Exception $e) {
+    }
+
+
+    ?>
