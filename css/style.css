@@ -453,7 +453,7 @@ animation-delay: .8s;
   padding-top: 25px;
 }
 #service-section .single-service-content {
-  border: 3px solid #808489;
+  /* border: 3px solid #808489; */
   text-align: center;
   margin-bottom: 20px;
   padding: 118px 23px 65px 23px;
@@ -647,12 +647,14 @@ animation-delay: .8s;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 30px;
+  margin-left: 120px;
+
 
 }
 .page-middle-banner .opacity {
   background:rgba(0,0,0,0.48);
   text-align: center;
-  padding: 30px 0;
+  
 }
 .page-middle-banner .opacity h3 {
   color: #fff;
