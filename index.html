@@ -48,8 +48,10 @@ include 'config.php';
 		<header class="theme-main-header">
 			<div class="container">
 				<!-- <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" id="logosize" width="70%"></a> -->
-				<a href="index.html" class="logo float-left tran4s"><img src="images/270x100.png" alt="Logo"
-						id="logosize" width="70%"></a>
+				<a href="index.html" class="logo float-left tran4s" style="display: flex;align-items: center;">
+					<img src="images/icon-eagle.png" alt="Logo" id="logosize" style="margin-bottom: 4px;">
+					<p style="font-size: 3rem;color: #ff9900;">EagleGPS</p>
+				</a>
 				<!-- ========================= Theme Feature Page Menu ======================= -->
 				<nav class="navbar float-right theme-main-menu one-page-menu" id="navva">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -108,7 +110,7 @@ include 'config.php';
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
 								<h1>
-									GPS Tracking Services
+									Eagle GPS Tracking Services
 								</h1>
 
 							</div>
@@ -495,28 +497,28 @@ include 'config.php';
 									onkeyup="validate(this)"><span style="color: red" id="valid_country"></span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
 								<input type="text" placeholder="City*" name="city" id="city"
 									onkeyup="validate(this)"><span style="color: red" id="valid_city"></span>
 							</div>
-						</div>
-
-					</div>
-					<div class="row">
+						</div> -->
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
 								<select name="subbj" id="subbj" class="css">
 									<option value="">Select Subject*</option>
 									<option value="Interested to Purchase">Request of Quotation</option>
-									<option value="Interested to Partner">Be a partner</option>
+									<option value="Interested to Partner">Become a partner</option>
 									<option value="Others">Others</option>
 								</select>
 
 							</div>
 						</div>
 
-						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					</div>
+					<div class="row">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="single-input">
 								<input type="message" placeholder="Write Your Message Here" name="Message" id="aemail"
 									><span style="color: red" id="valid_aemail"></span>
@@ -541,7 +543,8 @@ include 'config.php';
 
 					</div>
 
-					<center><button class="tran3s p-color-bg custom-button" name="submit" type="submit" onclick="Submitform()">Submit</button></center>
+					<div style="display: flex;justify-content: center;">
+						<button class="tran3s p-color-bg custom-button" name="submit" type="submit" onclick="Submitform()">Submit</button></center>
 				</form>		
 					<!-- Contact Form Validation Markup -->
 					<!-- Contact alert -->

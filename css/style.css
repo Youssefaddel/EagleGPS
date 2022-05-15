@@ -652,7 +652,7 @@ animation-delay: .8s;
 .page-middle-banner .opacity {
   background:rgba(0,0,0,0.48);
   text-align: center;
-  padding: 134px 0 137px 0;
+  padding: 30px 0;
 }
 .page-middle-banner .opacity h3 {
   color: #fff;
@@ -666,7 +666,7 @@ animation-delay: .8s;
   text-transform: uppercase;
   font-weight: 500;
   border-width:1px;
-  border-radius:initial;
+  border-radius: 5px;
   margin: 10px;
 }
 .platform-text{
@@ -1069,10 +1069,9 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-#partner-section {
-  margin: 100px 0 0 0;
+ #partner-section {
+  margin: 10rem;
   background: #ffffff;
-  padding: 50px 0;
 }
 #partner-section .item {
   border:1px solid #dfdfdf;
@@ -1154,6 +1153,8 @@ animation-delay: .8s;
   height: 100%;
   border:1px solid #dfdfdf;
   padding: 0 15px;
+  border-radius: 2rem;
+
 }
 #contact-section .send-message form textarea {
   height: 260px;
@@ -1169,6 +1170,7 @@ animation-delay: .8s;
   height: 100%;
   border:1px solid #dfdfdf;
   padding: 0 15px;
+  border-radius: 2rem;
 }
 
 #contact-section .send-message form select {
