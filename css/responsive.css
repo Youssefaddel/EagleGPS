@@ -131,4 +131,23 @@
   .banner h6 {font-size: 14px;}
   .hermes.tparrows {display: none;}
   .recent-single-post .post {width: 100%;padding: 12px 0 0 0;}
+  .opacity .row div img{
+    height: 28rem !important;
+    margin-left: 0rem !important;
+}
+.page-middle-banner {
+
+  margin-left: 0;
+}
+.page-middle-banner .opacity a {
+  background-color: rgb(61, 59, 59);
+  width: 139px;
+  line-height: 51px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 200;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 8px;
+}
 }
