@@ -1,4 +1,4 @@
-/*#FF5733*/
+/*#ff9900*/
 
 /* CSS Document */
 
@@ -233,13 +233,13 @@ animation-delay: .8s;
 .blog-details-post-wrapper .list-img-wrapper ul li a:hover,.blog-details-post-wrapper .post-comment form button:hover,
 .blog-details-post-wrapper .post-share-area .share li a:hover,.theme-main-menu.navbar .nav>li ul li a:hover,
 .blog-details-post-wrapper .post-share-area .share li a.active {
-  color:#FF5733;
+  color:#ff9900;
 }
 .p-color-bg,.theme-title h2:before,#about-us .single-about-content:hover .icon,
 #skill-section .codeconSkillbar .skillBar,#our-client .owl-theme .owl-dots .owl-dot.active span,
 #our-client .owl-theme .owl-dots .owl-dot:hover span,
 .blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
-  background: #FF5733;
+  background: #ff9900;
 }
 .banner .project-button,#about-us .icon,#about-us .single-about-content a.more,
 #service-section .single-service-content:hover,#project-section .project-menu ul li.active,
@@ -249,7 +249,7 @@ animation-delay: .8s;
 #contact-section .contact-address-content .left-side ul li .icon,#contact-section .send-message form button,
 .sidebar-tags ul li a:hover,.blog-details-post-wrapper .post-comment form button,
 .blog-details-post-wrapper .post-comment textarea:focus,.blog-details-post-wrapper .post-comment input:focus {
-  border-color:#d73e4d;
+  border-color:#ff9900;
   border-style: solid;
 }
 /*** 
@@ -1240,10 +1240,10 @@ animation-delay: .8s;
   font-size: 20px;
 }
 #success {
-  color: #FF5733;
+  color: #ff9900;
 }
 #error {
-  color: #FF5733;
+  color: #ff9900;
 }
 #error button,
 #success button {
@@ -1653,7 +1653,7 @@ footer p {
 
 .hvr-bounce-to-right:before {
 
-    background: #FF5733!important;
+    background: #ff9900!important;
   }
 
   .custom-button{
@@ -1667,7 +1667,7 @@ footer p {
 
       }
       .colr{
-        background-color: #FF5733!important;
+        background-color: #ff9900!important;
         color:#000!important;
       }   
 
