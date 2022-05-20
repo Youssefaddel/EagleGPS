@@ -315,7 +315,7 @@ include 'config.php';
 			</div>
 			<div class="page-middle-banner">
 				<div class="opacity">
-					<div class="row" style="display: flex;align-items: center;">
+					<div class="row" style="display: flex;align-items: center;"> 
 						
 
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
