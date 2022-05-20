@@ -1,9 +1,9 @@
-<!-- <?php
+ <?php
 require_once('PHPMailer/src/Exception.php');
 require_once('PHPMailer/src/PHPMailer.php');
 require_once('PHPMailer/src/SMTP.php');
 include 'config.php';
-?> -->
+?> 
 <!-- images download from pixabay.com -->
 
 <!DOCTYPE html>
@@ -97,7 +97,7 @@ include 'config.php';
 						<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default"
 							data-easeout="default" data-masterspeed="default" data-delay="2000" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/slider1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+							<img src="images/cover1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
 								data-bgposition="center center">
 							<!-- LAYERS -->
 							<div class="tp-caption" data-x="['center','center','center','center']"
@@ -119,10 +119,10 @@ include 'config.php';
 
 						<!-- SLIDE2  -->
 						<li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
-							data-easeout="default" data-masterspeed="default" data-thumb="images/slider/slider2.jpg"
+							data-easeout="default" data-masterspeed="default" data-thumb="images/cover2.jpg"
 							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/slider2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+							<img src="images/cover2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
 								data-bgposition="center center">
 							<!-- LAYERS -->
 
@@ -146,10 +146,10 @@ include 'config.php';
 
 						<!-- SLIDE3  -->
 						<li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default"
-							data-easeout="default" data-masterspeed="default" data-thumb="images/slider/slider3.jpg"
+							data-easeout="default" data-masterspeed="default" data-thumb="images/.jpg"
 							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/slider3.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+							<img src="images/cover2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
 								data-bgposition="center center">
 							<!-- LAYERS -->
 
@@ -746,7 +746,9 @@ include 'config.php';
 </html>
 
  <!-- header-start-end -->
- <!-- <?php
+
+
+  <?php
     //Create an instance; passing `true` enables exceptions
 
     try {
@@ -784,4 +786,4 @@ include 'config.php';
     }
 
 
-    ?> -->
+    ?>
