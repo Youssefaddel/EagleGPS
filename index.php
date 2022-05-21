@@ -17,7 +17,7 @@ include 'config.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Eagle GPS Tracking</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="images/icon-eagle.png">
+	<link rel="icon" type="image/png" sizes="56x56" href="images/eagle-icon.png">
 	<link rel="stylesheet" href="../../../www.w3schools.com/w3css/4/w3.css">
 	<!-- Main style sheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -49,8 +49,8 @@ include 'config.php';
 			<div class="container">
 				<!-- <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" id="logosize" width="70%"></a> -->
 				<a href="index.html" class="logo float-left tran4s" style="display: flex;align-items: center;">
-					<img src="images/icon-eagle.png" alt="Logo" id="logosize" style="margin-bottom: 4px;">
-					<p style="font-size: 3rem;color: #ff9900;">EagleTrack</p>
+					<img src="images/logo/eagle-logo.png" alt="Logo" id="logosize" style="margin-bottom: 4px;">
+					<p style="font-size: 2rem;color: #ff9900;">EagleTrack</p>
 				</a>
 				<!-- ========================= Theme Feature Page Menu ======================= -->
 				<nav class="navbar float-right theme-main-menu one-page-menu" id="navva">
@@ -117,16 +117,16 @@ include 'config.php';
 						</li>
 
 						<!-- SLIDE2  -->
-						<!-- <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
-							data-easeout="default" data-masterspeed="default" data-thumb="images/cover2.jpg"
-							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description=""> -->
+						<li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
+							data-easeout="default" data-masterspeed="default" data-thumb="images/cover3.jpg"
+							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description="">
 							<!-- MAIN IMAGE -->
-							<!-- <img src="images/cover3.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
-								data-bgposition="center center"> -->
+							<img src="images/cover3.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+								data-bgposition="center center">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 1 -->
-							<!-- <div class="tp-caption" data-x="['center','center','center','center']"
+							<div class="tp-caption" data-x="['center','center','center','center']"
 								data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
 								data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none"
 								data-whitespace="nowrap" data-transform_idle="o:1;"
@@ -135,13 +135,13 @@ include 'config.php';
 								data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="20"
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
-								<h1>
+								<!-- <h1>
 									EagleTrack GPS
-								</h1>
-								<h3>Track Anything Important To You</h3>
+								</h1> -->
+								<!-- <h3>Track Anything Important To You</h3> -->
 
 							</div>
-						</li> -->
+						</li>
 
 
 						<!-- SLIDE3  -->
@@ -166,7 +166,7 @@ include 'config.php';
 								<h1>
 									EagleTrack GPS
 								</h1>
-								<p>       Track Everything You Care About...</p>
+								<p>Track Everything You Care About...</p>
 
 							</div>
 						</li>
@@ -202,7 +202,7 @@ include 'config.php';
 					<div class="col-lg-6">
 						<h5>WHO WE ARE ?</h5>
 						<hr>
-						<p>EAGLE GPS TECHNOLOGY is one of the companies that now operates 10000+ vehicles. We have
+						<p>EAGLE TRACK GPS TECHNOLOGY is one of the companies that now operates 10000+ vehicles. We have
 							highly skilled and trained employees that are ready to provide you with the finest service
 							at any time and from any location.</p><br>
 					</div>
@@ -751,20 +751,18 @@ include 'config.php';
 
   <?php
 
-  
     //Create an instance; passing `true` enables exceptions
-
     try {
         //Server settings
-        $mail->isSMTP();                                            //Send using SMTP
+        $mail->isSMTP();                                     //Send using SMTP
         $mail->Host       = $hostConfig;                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = $SMTPAuthConfig;                                   //Enable SMTP authentication
-        $mail->Username   = $usernameConfig;                     //SMTP username
-        $mail->Password   = $passwordConfig;                               //SMTP password
-        $mail->Port       = $portConfig;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPAuth   = $SMTPAuthConfig;                 //Enable SMTP authentication
+        $mail->Username   = $usernameConfig;                 //SMTP username
+        $mail->Password   = $passwordConfig;                 //SMTP password
+        $mail->Port       = $portConfig;                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->addAddress('info@test.com.eg', 'omar');     //Add a recipient
+    $mail->addAddress('info@gps-eagletrack.com', 'Youssef');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
 
@@ -772,8 +770,8 @@ include 'config.php';
 		echo 'a7a';
         $mail->setFrom($_POST['email']);
         //Content
-        $body = "<br>Dear , Admin <br/>";
-        $body .= "<b>You have received a subscription at the BML website and here is the information :-</b> <br/>";
+        $body =  "<br>Dear , Admin <br/>";
+        $body .= "<b>You have received a subscription at the EagleTrack website and here is the information :-</b> <br/>";
         $body .= "<b>Email :</b>" . $_POST['email']  . "<br/>";
 
             $mail->isHTML(true);                                  //Set email format to HTML
@@ -787,6 +785,5 @@ include 'config.php';
         }
     } catch (Exception $e) {
     }
-
 
     ?>
