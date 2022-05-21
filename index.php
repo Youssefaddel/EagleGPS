@@ -50,7 +50,7 @@ include 'config.php';
 				<!-- <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" id="logosize" width="70%"></a> -->
 				<a href="index.html" class="logo float-left tran4s" style="display: flex;align-items: center;">
 					<img src="images/icon-eagle.png" alt="Logo" id="logosize" style="margin-bottom: 4px;">
-					<p style="font-size: 3rem;color: #ff9900;">EagleGPS</p>
+					<p style="font-size: 3rem;color: #ff9900;">EagleTrack</p>
 				</a>
 				<!-- ========================= Theme Feature Page Menu ======================= -->
 				<nav class="navbar float-right theme-main-menu one-page-menu" id="navva">
@@ -94,13 +94,13 @@ include 'config.php';
 				<div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
 					<ul>
 						<!-- SLIDE1  -->
-						<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default"
-							data-easeout="default" data-masterspeed="default" data-delay="2000" data-description="">
+						<!-- <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default"
+							data-easeout="default" data-masterspeed="default" data-delay="1000" data-description="">-->
 							<!-- MAIN IMAGE -->
-							<img src="images/cover1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
-								data-bgposition="center center">
+							<!-- <img src="images/cover1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+								data-bgposition="center center"> --> -->
 							<!-- LAYERS -->
-							<div class="tp-caption" data-x="['center','center','center','center']"
+							<!-- <div class="tp-caption" data-x="['center','center','center','center']"
 								data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
 								data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none"
 								data-whitespace="nowrap" data-transform_idle="o:1;"
@@ -110,24 +110,24 @@ include 'config.php';
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
 								<h1>
-									Eagle GPS Tracking Services
+									EagleTrack
 								</h1>
-
+									<h3>GPS Tracking Services</h3>
 							</div>
 
-						</li>
+						</li> -->
 
 						<!-- SLIDE2  -->
-						<li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
+						<!-- <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
 							data-easeout="default" data-masterspeed="default" data-thumb="images/cover2.jpg"
-							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description="">
+							data-rotate="0" data-saveperformance="off" data-delay="5000" data-description=""> -->
 							<!-- MAIN IMAGE -->
-							<img src="images/cover2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
-								data-bgposition="center center">
+							<!-- <img src="images/cover3.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+								data-bgposition="center center"> -->
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption" data-x="['center','center','center','center']"
+							<!-- <div class="tp-caption" data-x="['center','center','center','center']"
 								data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
 								data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none"
 								data-whitespace="nowrap" data-transform_idle="o:1;"
@@ -137,11 +137,12 @@ include 'config.php';
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
 								<h1>
-									GPS Tracking Services
+									EagleTrack GPS
 								</h1>
+								<h3>Track Anything Important To You</h3>
 
 							</div>
-						</li>
+						</li> -->
 
 
 						<!-- SLIDE3  -->
@@ -164,8 +165,9 @@ include 'config.php';
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
 								<h1>
-									GPS Tracking Services
+									EagleTrack GPS
 								</h1>
+								<p>       Track Everything You Care About...</p>
 
 							</div>
 						</li>
@@ -421,25 +423,25 @@ include 'config.php';
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="left-side">
 							<ul class="list-inline">
-								<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
-									<li>
+								<!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xs-0">
+									 <li>
 
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone"
 												aria-hidden="true"></i></div>
-										<p>+20 114 483 1419</p>
+										<p></p>
 
-									</li>
-								</div>
+									</li> 
+								</div> -->
 								<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
 									<li>
 
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
 												aria-hidden="true"></i></div>
-										<a href="eagle.co139@gmail.com">eagle.co139@gmail.com</a>
+										<p>info@gps-eagletrack.com</p>
 
 									</li>
 								</div>
-								<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+								<!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
 									<li>
 
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker"
@@ -447,7 +449,7 @@ include 'config.php';
 										<p>Dubai, United Arab Emirates</p>
 
 									</li>
-								</div>
+								</div> -->
 							</ul>
 						</div>
 					</div>
@@ -749,6 +751,8 @@ include 'config.php';
 
 
   <?php
+
+  
     //Create an instance; passing `true` enables exceptions
 
     try {

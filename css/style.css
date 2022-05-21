@@ -380,7 +380,15 @@ animation-delay: .8s;
   background: #000;
 }
 .banner h1,.banner h6,.banner .project-button {
-  color:#fff;
+    color: #fff;
+    text-transform: unset;
+}
+.banner p{
+    line-height: 44px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #f90;
+
 }
 .banner h6 {
   font-weight: 500;
@@ -1277,7 +1285,7 @@ animation-delay: .8s;
  ***/
 footer {
   margin: 100px 0 0 0;
-  background: #1e1e1e;
+  background: #0a1942;
   padding: 20px 0 10px 0;
   text-align: center;
 }
@@ -1689,4 +1697,14 @@ footer p {
         margin-bottom: 25px!important;
 
       }
-      
+
+.caption1{
+  color:#fff;
+
+}
+
+.tp-parallax-wrap {
+  left: 66px !important;
+  top: 250px !important;
+}
+
