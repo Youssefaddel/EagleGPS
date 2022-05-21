@@ -94,13 +94,13 @@ include 'config.php';
 				<div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
 					<ul>
 						<!-- SLIDE1  -->
-						<!-- <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default"
-							data-easeout="default" data-masterspeed="default" data-delay="1000" data-description="">-->
+						<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default"
+							data-easeout="default" data-masterspeed="default" data-delay="1000" data-description="">
 							<!-- MAIN IMAGE -->
-							<!-- <img src="images/cover1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
-								data-bgposition="center center"> --> -->
+							<img src="images/cover1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
+								data-bgposition="center center">
 							<!-- LAYERS -->
-							<!-- <div class="tp-caption" data-x="['center','center','center','center']"
+							<div class="tp-caption" data-x="['center','center','center','center']"
 								data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
 								data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none"
 								data-whitespace="nowrap" data-transform_idle="o:1;"
@@ -110,12 +110,11 @@ include 'config.php';
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
 								<h1>
-									EagleTrack
+									GPS Tracking System	
 								</h1>
-									<h3>GPS Tracking Services</h3>
 							</div>
 
-						</li> -->
+						</li>
 
 						<!-- SLIDE2  -->
 						<!-- <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
