@@ -545,7 +545,9 @@ include 'config.php';
 					</div>
 
 					<div style="display: flex;justify-content: center;">
-						<button class="tran3s p-color-bg custom-button" name="submit" type="submit" onclick="Submitform()">Submit</button></center>
+						<button class="tran3s p-color-bg custom-button" name="submit" type="submit" >Submit</button>
+					</div>
+					</center>
 				</form>		
 					<!-- Contact Form Validation Markup -->
 					<!-- Contact alert -->
@@ -675,70 +677,70 @@ include 'config.php';
 		});
 
 
-		function Submitform() {
+		// function Submitform() {
 
-			submit = 'submit';
-			emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-			Fname = $('#Fname').val();
-			Lname = $('#Lname').val();
-			email = $('#email').val();
-			mob = $('#mob').val();
-			country = $('#country').val();
-			city = $('#city').val();
-			subbj = $('#subbj').val();
-			aemail = $('#aemail').val();
-			amob = $('#amob').val();
+		// 	submit = 'submit';
+		// 	emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		// 	Fname = $('#Fname').val();
+		// 	Lname = $('#Lname').val();
+		// 	email = $('#email').val();
+		// 	mob = $('#mob').val();
+		// 	country = $('#country').val();
+		// 	city = $('#city').val();
+		// 	subbj = $('#subbj').val();
+		// 	aemail = $('#aemail').val();
+		// 	amob = $('#amob').val();
 
-			if (Fname == '') {
-				$('#Fname').focus();
-				return;
-			}
-			if (Lname == '') {
-				$('#Lname').focus();
-				return;
-			}
-			if (email == '') {
-				$('#email').focus();
-				return;
-			} else if (!email.match(emailval)) {
-				alert('Email is Not vaild');
-				return;
-			}
-			if (mob == '') {
-				$('#mob').focus();
-				return;
-				return;
-			}
-			if (country == '') {
-				$('#country').focus();
-				return;
-			}
-			if (city == '') {
-				$('#city').focus();
-				return;
-			}
-			if (subbj == '') {
-				$('#subbj').focus();
-				return;
-			}
+		// 	if (Fname == '') {
+		// 		$('#Fname').focus();
+		// 		return;
+		// 	}
+		// 	if (Lname == '') {
+		// 		$('#Lname').focus();
+		// 		return;
+		// 	}
+		// 	if (email == '') {
+		// 		$('#email').focus();
+		// 		return;
+		// 	} else if (!email.match(emailval)) {
+		// 		alert('Email is Not vaild');
+		// 		return;
+		// 	}
+		// 	if (mob == '') {
+		// 		$('#mob').focus();
+		// 		return;
+		// 		return;
+		// 	}
+		// 	if (country == '') {
+		// 		$('#country').focus();
+		// 		return;
+		// 	}
+		// 	if (city == '') {
+		// 		$('#city').focus();
+		// 		return;
+		// 	}
+		// 	if (subbj == '') {
+		// 		$('#subbj').focus();
+		// 		return;
+		// 	}
 
 
-			$.ajax({
-				url: "inc/sendemail.php",
-				type: "POST",
-				data: { 'submit': submit, 'Fname': Fname, 'Lname': Lname, 'email': email, 'mob': mob, 'country': country, 'city': city, 'subbj': subbj, 'aemail': aemail, 'amob': amob },
-				success: function (output) {
-					console.log(output);
-					if (output == 1) {
-						$('#alert-success').show();
-					} else {
-						$('#alert-error').show();
-					}
+		// 	$.ajax({
+		// 		url: "inc/sendemail.php",
+		// 		type: "POST",
+		// 		data: { 'submit': submit, 'Fname': Fname, 'Lname': Lname, 'email': email, 'mob': mob, 'country': country, 'city': city, 'subbj': subbj, 'aemail': aemail, 'amob': amob },
+		// 		success: function (output) {
+		// 			console.log(output);
+		// 			if (output == 1) {
+		// 				$('#alert-success').show();
+		// 			} else {
+		// 				$('#alert-error').show();
+		// 			}
 
-				}
-			});
+		// 		}
+		// 	});
 
-		}
+		// }
 
 	</script>
 
@@ -750,7 +752,7 @@ include 'config.php';
 
 
   <?php
-
+	echo 'yes ';
     //Create an instance; passing `true` enables exceptions
     try {
         //Server settings
@@ -762,12 +764,11 @@ include 'config.php';
         $mail->Port       = $portConfig;                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->addAddress('info@gps-eagletrack.com', 'Youssef');     //Add a recipient
+    $mail->addAddress('mhmedomr336@gmail.com', 'mhmed');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
 
     if (isset($_POST['submit'])) {
-		echo 'a7a';
         $mail->setFrom($_POST['email']);
         //Content
         $body =  "<br>Dear , Admin <br/>";
@@ -778,12 +779,13 @@ include 'config.php';
             $mail->Subject = 'subscription';
             $mail->Body    = $body;
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+			echo 'Message has been sent';
 
             $mail->send();
-            echo "<meta http-equiv='refresh' content='0;url=index.php'>";
             die;
         }
     } catch (Exception $e) {
+		echo 'eorrrrror2';
     }
 
     ?>
