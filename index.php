@@ -1,4 +1,4 @@
- <?php
+<?php
 require_once('PHPMailer/src/Exception.php');
 require_once('PHPMailer/src/PHPMailer.php');
 require_once('PHPMailer/src/SMTP.php');
@@ -757,31 +757,37 @@ include 'config.php';
     try {
         //Server settings
         $mail->isSMTP();                                     //Send using SMTP
+		$mail->SMTPDebug = '2';                      //Enable verbose debug output
         $mail->Host       = $hostConfig;                     //Set the SMTP server to send through
         $mail->SMTPAuth   = $SMTPAuthConfig;                 //Enable SMTP authentication
         $mail->Username   = $usernameConfig;                 //SMTP username
         $mail->Password   = $passwordConfig;                 //SMTP password
+		$mail->SMTPSecure = 'ssl';          //Enable implicit TLS encryption
         $mail->Port       = $portConfig;                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->addAddress('mhmedomr336@gmail.com', 'mhmed');     //Add a recipient
+    $mail->addAddress('info@gps-eagletrack.com', 'mhmed');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
     // $mail->addAddress('email', 'name');     //Add a recipient
 
     if (isset($_POST['submit'])) {
-        $mail->setFrom($_POST['email']);
+        $mail->setFrom('youssefaddel.h@gmail.com');
+		// echo $_POST['email'];
+		// echo '</br>';
+		
         //Content
         $body =  "<br>Dear , Admin <br/>";
         $body .= "<b>You have received a subscription at the EagleTrack website and here is the information :-</b> <br/>";
         $body .= "<b>Email :</b>" . $_POST['email']  . "<br/>";
-
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'subscription';
-            $mail->Body    = $body;
+            $mail->Body    = 'asdsadasdsa';
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $x = $mail->send();
+			echo '</br>' ;
+			echo  'asdas' . $x ;
+			echo '</br>' ;
 			echo 'Message has been sent';
-
-            $mail->send();
             die;
         }
     } catch (Exception $e) {
