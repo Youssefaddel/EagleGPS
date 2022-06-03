@@ -21,7 +21,7 @@ try {
     $mail->Username   = 'info@gps-eagletrack.com';                     //SMTP username
     $mail->Password   = 'TEQGL-W7Lg.f';                               //SMTP password
     // $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-    $mail->Port       = 26;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('youssefhaddad@gps-eagletrack.com');
