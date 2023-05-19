@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eagle GPS Tracking</title>
+    <title>Eagle-IOT GPS Tracking</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/eagle-icon.png">
     <link rel="stylesheet" href="../../../www.w3schools.com/w3css/4/w3.css">
@@ -42,7 +42,7 @@
             <div class="container">
                 <a href="index.php" class="logo float-left tran4s" style="display: flex;align-items: center;">
                     <img src="images/logo/eagle-logo.png" alt="Logo" id="logosize" style="margin-bottom: 4px;">
-                    <p style="font-size: 2rem;color: #ff9900;">EagleTrack</p>
+                    <p style="font-size: 2rem;color: #ffff;">Eagle-</p> <p style="font-size: 2rem;color: #ff9900">IOT</p>
                 </a>
                 <!-- ========================= Theme Feature Page Menu ======================= -->
                 <nav class="navbar float-right theme-main-menu one-page-menu" id="navva">
@@ -156,7 +156,7 @@
                                 data-splitin="none" data-splitout="none" data-responsive_offset="on"
                                 style="z-index: 6; white-space: nowrap;">
                                 <h1>
-                                    EagleTrack GPS
+                                    eagle-IOT GPS
                                 </h1>
                                 <p>Track Everything You Care About...</p>
 
@@ -194,7 +194,7 @@
                     <div class="col-lg-6">
                         <h5>WHO WE ARE ?</h5>
                         <hr>
-                        <p>EAGLE TRACK GPS TECHNOLOGY is one of the companies that now operates 10000+ vehicles. We have
+                        <p>EALGE-IOT GPS TECHNOLOGY is one of the companies that now operates 10000+ vehicles. We have
                             highly skilled and trained employees that are ready to provide you with the finest service
                             at any time and from any location.</p><br>
                     </div>
@@ -431,7 +431,7 @@
 
                                         <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
                                                 aria-hidden="true"></i></div>
-                                        <p>info@gps-eagletrack.com</p>
+                                        <p>Info@eagle-iot.com</p>
 
                                     </li>
                                 </div>
@@ -588,7 +588,7 @@
 							<li><a href="#" >Terms & Conditions</a></li>
 						</ol> -->
 
-                        <span>Copyright © 2022 eTrack GPS. All rights reserved.
+                        <span>Copyright © 2023 eagle-IOT. All rights reserved.
                         </span>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
