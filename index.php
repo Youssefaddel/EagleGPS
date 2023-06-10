@@ -645,8 +645,6 @@
     <!-- Theme js -->
     <script type="text/javascript" src="js/theme.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
 
 
     <script type="text/javascript">
@@ -663,6 +661,8 @@
                 accDiv.style.display = "none";
             }
         }
+
+        
 
         $(document).ready(function() {
             $('ul li').on('click', function() {
@@ -686,10 +686,6 @@
                     $('#Fname').focus();
                     return;
                 }
-                // if (company == '') {
-                //     $('#company').focus();
-                //     return;
-                // }
                 if (email == '') {
                     $('#email').focus();
                     return;
@@ -718,14 +714,17 @@
                 $.ajax({
                 url: "send_email.php",
                 type: "POST",
-                data: { 'submit': submit,
-                        'Fname': Fname,
-                        'email': email,
-                        'mob': mob,
-                        'subbj': subbj,
-                        'country': country,
-                        'server': server,
-                    },
+                data: {
+                    'submit': submit,
+                    'Fname': Fname,
+                    'email': email,
+                    'mob': mob,
+                    'company': company,
+                    'subbj': subbj,
+                    'message': message,
+                    'server': server,
+                    'accName': accName
+                },
                 success: function (output) {
                     if (output) {
                         $('#alert-success').show();
@@ -734,6 +733,7 @@
                     }
                 }
                 });
+                console.log(data);
             });
         });
     </script>
