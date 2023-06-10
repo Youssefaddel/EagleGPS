@@ -457,19 +457,12 @@
 
                 <!-- Contact Form -->
                 <div class="send-message" style="margin-top: 20px">
-                    <form accept-charset="UTF-8" enctype="multipart/form-data" novalidate="" action="index.php"
-                        method="post" onsubmit='return false;' id="frmData">
+                    <form method="post" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="" onsubmit='return false;' id="frmData">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
-                                    <input type="text" placeholder="First Name*" name="Fname" id="Fname"
+                                    <input type="text" placeholder="Full Name*" name="Fname" id="Fname"
                                         onkeyup="validate(this)"><span style="color: red" id="valid_Fname"></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="single-input">
-                                    <input type="text" placeholder="Last Name*" name="Lname" id="Lname"
-                                        onkeyup="validate(this)"><span style="color: red" id="valid_Lname"></span>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -478,73 +471,70 @@
                                         onkeyup="email_Check(this)"><span style="color: red" id="valid_email"></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
                                     <input type="text" placeholder="Mobile Number*" name="mob" id="mob"
                                         onkeyup="chk_phoneno(this)"><span style="color: red" id="valid_mob"></span>
                                 </div>
-                            </div>
+                            </div> 
+                        </div>
 
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-input">
+                                    <input type="text" placeholder="Company" name="company" id="company">
+                                </div>
+                            </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
                                     <input type="text" placeholder="Country*" name="country" id="country"
                                         onkeyup="validate(this)"><span style="color: red" id="valid_country"></span>
                                 </div>
                             </div>
-                            <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<div class="single-input">
-								<input type="text" placeholder="City*" name="city" id="city"
-									onkeyup="validate(this)"><span style="color: red" id="valid_city"></span>
-							</div>
-						</div> -->
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
-                                    <select name="subbj" id="subbj" class="css">
-                                        <option value="">Select Subject*</option>
-                                        <option value="Interested to Purchase">Request of Quotation</option>
-                                        <option value="Interested to Partner">Become a partner</option>
-                                        <option value="Others">Others</option>
+                                    <select name="subbj" id="subbj" onchange="toggleServerDiv()">
+                                        <option value="">Subject*</option>
+                                        <option value="purchase">purchase</option>
+                                        <option value="partner">Become a partner</option>
+                                        <option value="issue">Issue Reporting</option>
+                                        <option value="others">Others</option>
                                     </select>
-
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="single-input-area">
+                                    <textarea placeholder="Write Your Message Here" name="msg" id="msg" rows="3" onkeyup="validate(this)"></textarea>
+                                    <span style="color: red" id="valid_aemail"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="serverDiv" style="display: none;">
+                                <div class="single-input">
+                                    <select name="server" id="server">
+                                    <option value="">Server*</option>
+                                    <option value="etrack">eTrack</option>
+                                    <option value="itrack">iTrack</option>
+                                    <option value="whatsgps">WhatsGPS</option>
+                                    <option value="other_server">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="accDiv" style="display: none;">
+                                <div class="single-input">
+                                    <input type="text" placeholder="Account Name*" name="accName" id="accName">
+                                </div>
+                            </div>
+                        </div>
                         </div>
                         <div class="row">
-
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="single-input">
-                                    <input type="message" placeholder="Write Your Message Here" name="Message"
-                                        id="aemail"><span style="color: red" id="valid_aemail"></span>
-                                </div>
+                            <div style="display: flex;justify-content: center;">
+                                <button class="tran3s p-color-bg custom-button" type="submit" name="submit"
+                                    id="submit_btn">Submit</button>
                             </div>
-
-
-                            <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							<div class="single-input">
-								<input type="email" placeholder="Alternate Email ID" name="aemail" id="aemail"
-									onkeyup="email_Check(this)"><span style="color: red" id="valid_aemail"></span>
-							</div>
-						</div> -->
-
-                            <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<div class="single-input">
-								<input type="text" placeholder="Alternate Mobile Number" name="amob" id="amob"
-									onkeyup="chk_phoneno(this)"><span style="color: red" id="valid_amob"></span>
-							</div>
-						</div> -->
-
-
                         </div>
-
-                        <div style="display: flex;justify-content: center;">
-                            <button class="tran3s p-color-bg custom-button" name="submit"
-                                id="submit_btn">Submit</button>
-                        </div>
-                        </center>
                     </form>
                     <!-- Contact Form Validation Markup -->
                     <!-- Contact alert -->
@@ -572,11 +562,8 @@
 
 
 
-        <!--
-			=====================================================
-				Footer
-			=====================================================
-		-->
+        <!-- Footer
+		=====================================================-->
         <footer>
             <div class="container">
                 <div class="row">
@@ -607,9 +594,8 @@
 
 
 
-        <!-- =============================================
-				Loading Transition
-				============================================== -->
+        <!-- Loading Transition
+		=====================================================-->
         <div id="loader-wrapper">
             <div id="preloader_1">
                 <span></span>
@@ -629,7 +615,8 @@
     </div> <!-- /.main-page-wrapper -->
 
 
-    <!-- Js File_________________________________ -->
+    <!-- Js File
+    =====================================================-->
 
     <!-- j Query -->
     <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
@@ -658,80 +645,97 @@
     <!-- Theme js -->
     <script type="text/javascript" src="js/theme.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
 
 
     <script type="text/javascript">
-    $(document).ready(function() {
 
-        $('ul li').on('click', function() {
+        function toggleServerDiv() {
+            var subbj = document.getElementById("subbj");
+            var serverDiv = document.getElementById("serverDiv");
 
-            if ($('#navbar-collapse-1').hasClass('in')) {
-                $('#navbar-collapse-1').removeClass('in')
+            if (subbj.value === "issue") {
+                serverDiv.style.display = "block";
+                accDiv.style.display = "block";
+            } else {
+                serverDiv.style.display = "none";
+                accDiv.style.display = "none";
             }
-        });
+        }
 
-        $("#submit_btn").click(function() {
+        $(document).ready(function() {
+            $('ul li').on('click', function() {
 
-            submit = 'submit';
-            emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-            Fname = $('#Fname').val();
-            Lname = $('#Lname').val();
-            email = $('#email').val();
-            mob = $('#mob').val();
-            country = $('#country').val();
-            city = $('#city').val();
-            subbj = $('#subbj').val();
-            if (Fname == '') {
-                $('#Fname').focus();
-                return;
-            }
-            if (Lname == '') {
-                $('#Lname').focus();
-                return;
-            }
-            if (email == '') {
-                $('#email').focus();
-                return;
-            } else if (!email.match(emailval)) {
-                alert('Email is Not vaild');
-                return;
-            }
-            if (mob == '') {
-                $('#mob').focus();
-                return;
-                return;
-            }
-            if (country == '') {
-                $('#country').focus();
-                return;
-            }
-            if (city == '') {
-                $('#city').focus();
-                return;
-            }
-            if (subbj == '') {
-                $('#subbj').focus();
-                return;
-            }
-
-            $.ajax({
-            url: "config.php",
-            type: "POST",
-            data: { 'submit': submit, 'Fname': Fname, 'Lname': Lname, 'email': email, 'mob': mob },
-            success: function (output) {
-            	if (output) {
-            		$('#alert-success').show();
-            	} else {
-            		$('#alert-error').show();
-            	}
-            }
+                if ($('#navbar-collapse-1').hasClass('in')) {
+                    $('#navbar-collapse-1').removeClass('in')
+                }
             });
 
+            $("#submit_btn").click(function() {
+                submit = 'submit';
+                emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                Fname = $('#Fname').val();
+                // company = $('#company').val();
+                email = $('#email').val();
+                mob = $('#mob').val();
+                country = $('#country').val();
+                city = $('#city').val();
+                subbj = $('#subbj').val();
+                if (Fname == '') {
+                    $('#Fname').focus();
+                    return;
+                }
+                // if (company == '') {
+                //     $('#company').focus();
+                //     return;
+                // }
+                if (email == '') {
+                    $('#email').focus();
+                    return;
+                } else if (!email.match(emailval)) {
+                    alert('Email is Not vaild');
+                    return;
+                }
+                if (mob == '') {
+                    $('#mob').focus();
+                    return;
+                    return;
+                }
+                if (country == '') {
+                    $('#country').focus();
+                    return;
+                }
+                if (city == '') {
+                    $('#city').focus();
+                    return;
+                }
+                if (subbj == '') {
+                    $('#subbj').focus();
+                    return;
+                }
+
+                $.ajax({
+                url: "send_email.php",
+                type: "POST",
+                data: { 'submit': submit,
+                        'Fname': Fname,
+                        'email': email,
+                        'mob': mob,
+                        'subbj': subbj,
+                        'country': country,
+                        'server': server,
+                    },
+                success: function (output) {
+                    if (output) {
+                        $('#alert-success').show();
+                    } else {
+                        $('#alert-error').show();
+                    }
+                }
+                });
+            });
         });
-
-    });
     </script>
-
 </body>
-
 </html>
