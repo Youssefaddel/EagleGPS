@@ -17,6 +17,18 @@
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"> -->
+    <script>
+        function switchLanguage() {
+            var htmlTag = document.getElementsByTagName('html')[0];
+            if (htmlTag.getAttribute('lang') === 'en') {
+                htmlTag.setAttribute('lang', 'ar');
+                document.getElementById('language-switch').innerHTML = 'English';
+            } else {
+                htmlTag.setAttribute('lang', 'en');
+                document.getElementById('language-switch').innerHTML = 'العربية';
+            }
+        }
+    </script>
 </head>
 <style type="text/css">
 @media (min-width: 768px) {
@@ -332,13 +344,13 @@
                                         <p>Info@eagle-iot.net</p>
                                     </li>
                                 </div>
-                                <!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
 									<li>
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker"
 												aria-hidden="true"></i></div>
 										<p>Dubai, United Arab Emirates</p>
 									</li>
-								</div> -->
+								</div>
                             </ul>
                         </div>
                     </div>
@@ -397,8 +409,7 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                 <div class="single-input-area">
-                                    <textarea placeholder="Write Your Message Here" name="msg" id="msg" rows="3" onkeyup="validate(this)"></textarea>
-                                    <span style="color: red" id="valid_aemail"></span>
+                                    <textarea placeholder="Write Your Message Here" name="msg" id="msg" ></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="serverDiv" style="display: none;">
@@ -541,12 +552,15 @@
                 submit = 'submit';
                 emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
                 Fname = $('#Fname').val();
-                // company = $('#company').val();
+                company = $('#company').val();
                 email = $('#email').val();
                 mob = $('#mob').val();
                 country = $('#country').val();
                 city = $('#city').val();
                 subbj = $('#subbj').val();
+                server = $('#server').val();
+                accName = $('#accName').val();
+                msg = $('#msg').val();
                 if (Fname == '') {
                     $('#Fname').focus();
                     return;
@@ -561,7 +575,6 @@
                 if (mob == '') {
                     $('#mob').focus();
                     return;
-                    return;
                 }
                 if (country == '') {
                     $('#country').focus();
@@ -575,6 +588,8 @@
                     $('#subbj').focus();
                     return;
                 }
+                // console.log(submit,Fname,email,mob,company,subbj,server,accName)
+                // debugger
                 $.ajax({
                 url: "send_email.php",
                 type: "POST",
@@ -583,9 +598,10 @@
                     'Fname': Fname,
                     'email': email,
                     'mob': mob,
+                    'country': country,
                     'company': company,
                     'subbj': subbj,
-                    'message': message,
+                    'msg': msg,
                     'server': server,
                     'accName': accName
                 },
@@ -597,7 +613,6 @@
                     }
                 }
                 });
-                console.log(data);
             });
         });
     </script>
