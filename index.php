@@ -17,8 +17,6 @@
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"> -->
-
-
 </head>
 <style type="text/css">
 @media (min-width: 768px) {
@@ -27,17 +25,11 @@
     }
 }
 </style>
-
 <body>
     <div class="main-page-wrapper">
 
-
-
-        <!-- 
-			==============================================
-				Theme Header
-			==============================================
-		-->
+        <!-- Theme Header
+			==============================================-->
         <header class="theme-main-header">
             <div class="container">
                 <a href="index.php" class="logo float-left tran4s" style="display: flex;align-items: center;">
@@ -67,19 +59,14 @@
                             <li><a href="#parteners">Partners</a></li>
                             </li>
                             <li><a href="#contact-section">Contact</a></li>
-
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav> <!-- /.theme-feature-menu -->
             </div>
         </header> <!-- /.theme-main-header -->
-
-
-        <!--
-			=====================================================
-				Theme Main SLider
-			=====================================================
-		-->
+        
+        <!-- Theme Main SLider
+			=====================================================-->
         <div id="home" class="banner">
             <div class="rev_slider_wrapper">
                 <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
@@ -105,9 +92,7 @@
                                     GPS Tracking System
                                 </h1>
                             </div>
-
                         </li>
-
                         <!-- SLIDE2  -->
                         <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default"
                             data-easeout="default" data-masterspeed="default" data-thumb="images/cover3.jpg"
@@ -131,11 +116,8 @@
 									EagleTrack GPS
 								</h1> -->
                                 <!-- <h3>Track Anything Important To You</h3> -->
-
                             </div>
                         </li>
-
-
                         <!-- SLIDE3  -->
                         <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default"
                             data-easeout="default" data-masterspeed="default" data-thumb="images/.jpg" data-rotate="0"
@@ -144,7 +126,6 @@
                             <img src="images/cover2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3"
                                 data-bgposition="center center">
                             <!-- LAYERS -->
-
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption" data-x="['center','center','center','center']"
                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
@@ -162,25 +143,16 @@
 
                             </div>
                         </li>
-
-
-
                     </ul>
                 </div>
             </div><!-- END REVOLUTION SLIDER -->
         </div> <!--  /#banner -->
 
-
-
-        <!--
-			=====================================================
-				About us Section
-			=====================================================
-		-->
+        <!-- About us Section
+		=====================================================-->
         <section id="about-us">
             <div class="container">
                 <div class="theme-title">
-
                     <h2>ABOUT US</h2>
                     <p></p>
                 </div>
@@ -190,7 +162,6 @@
                             <img src="images/gps.jpg" alt="image" class="img-thumbnail img-responsive">
                         </div>
                     </div>
-
                     <div class="col-lg-6">
                         <h5>WHO WE ARE ?</h5>
                         <hr>
@@ -202,15 +173,8 @@
             </div>
         </section>
 
-
-
-
-
-        <!--
-			=====================================================
-				Service Section HIDDEN
-			=====================================================
-		-->
+        <!--Service Section HIDDEN
+		=====================================================-->
         <div id="project-product"></div>
         <div id="service-section">
             <div class="container">
@@ -219,9 +183,7 @@
                     <h2>FEATURES</h2>
                     <p>Here is the Most-Used features in our platform</p>
                 </div>
-
                 <div class="row">
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -232,7 +194,6 @@
                                 account simultaneously. </p>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -242,7 +203,6 @@
                             <p>Specific history route displayed on the map.</p>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -252,8 +212,6 @@
                             <p>Notification of enter into or depart from the GEO-fence</p>
                         </div>
                     </div>
-
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -263,7 +221,6 @@
                             <p>Stoping the Engine of your car by one click with the ability to reset it. </p>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -274,7 +231,6 @@
                                 easily.</p>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
@@ -289,30 +245,20 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
         <div id="download"></div>
-        <!--
-			=====================================================
-				Page middle banner
-			=====================================================
-		-->
+
+        <!--Page middle banner
+			=====================================================-->
         <div>
             <div class="theme-title">
 
                 <h2>OUR PLATFORM</h2>
                 <p class="platform-text">You can use our platform through the website or by downloading our applications
                     on your smart phone through the links below</p>
-
             </div>
             <div class="page-middle-banner">
                 <div class="opacity">
                     <div class="row" style="display: flex;align-items: center;">
-
-
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <img src="./images/platform.jpeg" alt=""
                                 style="width: 56rem;height: 44rem;margin-left: 0rem;">
@@ -331,56 +277,15 @@
             </div> <!-- /.page-middle-banner -->
         </div>
 
-
-        <!--
-			=====================================================
-				Our Client
-			=====================================================
-			-->
-        <!-- <div id="our-client">
-				<div class="container">
-					<div class="theme-title">
-						<h2>OUR HAPPY CLIENTS</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-					</div> 
-
-					<div class="client-slider">
-						<div class="item">
-							<img src="images/clients/client1.jpg" class="img-circle" alt="Client">
-							<p>My successful tracking approach is based on aggressive subcontractor administration, employ-ment of competent personnel, accurate schedule control, quality control and cost control.</p>
-							<h6>- Mario Dove -</h6>
-						</div> 
-						<div class="item">
-							<img src="images/clients/client1.jpg" class="img-circle" alt="Client">
-							<p>My successful tracking approach is based on aggressive subcontractor administration, employ-ment of competent personnel, accurate schedule control, quality control and cost control.</p>
-							<h6>- Mario Dove-</h6>
-						</div>
-						<div class="item">
-							<img src="images/clients/client1.jpg" class="img-circle" alt="Client">
-							<p>My successful tracking approach is based on aggressive subcontractor administration, employ-ment of competent personnel, accurate schedule control, quality control and cost control.</p>
-							<h6>- Mario Dove -</h6>
-						</div> 
-					</div> 
-				</div> 
-			</div> 
-			 -->
-
-        <!--
-			=====================================================
-				Partner Section
-			=====================================================
-		-->
-
+        <!--Partner Section
+			=====================================================-->
         <div id="parteners">
             <div class="container-fluid">
                 <div class="theme-title">
-
                     <h2>PARTNERS</h2>
                 </div>
-
                 <div id="partner-section">
                     <div class="container">
-
                         <div id="partner_logo" class="owl-carousel owl-theme">
                             <div class="item"><img src="images\logo\images.png" alt="logo"></div>
                             <div class="item"><img src="images\ampere-logo.jpg" alt="logo"></div>
@@ -396,17 +301,13 @@
 							<div class="item"><img src="images/logo/company2.svg" alt="logo"></div>
 							<div class="item"><img src="images/logo/company3.svg" alt="logo"></div> -->
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--
-			=====================================================
-				Contact Section
-			=====================================================
-		-->
+        <!-- Contact Section
+			=====================================================-->
         <div id="contact-section">
             <div class="container">
                 <div class="theme-title">
@@ -419,29 +320,23 @@
                             <ul class="list-inline">
                                 <!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xs-0">
 									 <li>
-
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone"
 												aria-hidden="true"></i></div>
 										<p></p>
-
 									</li> 
 								</div> -->
                                 <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
                                     <li>
-
                                         <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
                                                 aria-hidden="true"></i></div>
-                                        <p>Info@eagle-iot.com</p>
-
+                                        <p>Info@eagle-iot.net</p>
                                     </li>
                                 </div>
                                 <!-- <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
 									<li>
-
 										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker"
 												aria-hidden="true"></i></div>
 										<p>Dubai, United Arab Emirates</p>
-
 									</li>
 								</div> -->
                             </ul>
@@ -452,9 +347,6 @@
 						
 					</div> -->
                 </div>
-
-
-
                 <!-- Contact Form -->
                 <div class="send-message" style="margin-top: 20px">
                     <form method="post" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="" onsubmit='return false;' id="frmData">
@@ -478,7 +370,6 @@
                                 </div>
                             </div> 
                         </div>
-
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
@@ -503,7 +394,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                 <div class="single-input-area">
@@ -560,21 +450,17 @@
             </div> <!-- /.container -->
         </div> <!-- /#contact-section -->
 
-
-
         <!-- Footer
 		=====================================================-->
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
                         <!-- <ol class="list-inline">
 							<li><a href="#" >Privacy Policy</a></li>
 							<li><a href="#" >Social Media Policy</a></li>
 							<li><a href="#" >Terms & Conditions</a></li>
 						</ol> -->
-
                         <span>Copyright © 2023 eagle-IOT. All rights reserved.
                         </span>
                     </div>
@@ -587,12 +473,8 @@
                         </ul>
                     </div>
                 </div>
-
-
             </div>
         </footer>
-
-
 
         <!-- Loading Transition
 		=====================================================-->
@@ -605,50 +487,37 @@
                 <span></span>
             </div>
         </div>
-
-
         <!-- Scroll Top Button -->
         <button class="scroll-top tran3s p-color-bg">
             <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
         </button>
-
     </div> <!-- /.main-page-wrapper -->
-
 
     <!-- Js File
     =====================================================-->
-
     <!-- j Query -->
     <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
-
     <!-- revolution -->
     <script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
     <script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
-
     <script type="text/javascript" src="js/validation.js"></script>
     <script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
     <script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
     <script type="text/javascript" src="vendor /revolution/revolution.extension.kenburn.min.js"></script>
     <script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
-
-
     <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
     <!-- mixitUp -->
     <script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
     <!-- Progress Bar js -->
     <script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
-
     <!-- Theme js -->
     <script type="text/javascript" src="js/theme.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-
     <script type="text/javascript">
-
         function toggleServerDiv() {
             var subbj = document.getElementById("subbj");
             var serverDiv = document.getElementById("serverDiv");
@@ -661,9 +530,6 @@
                 accDiv.style.display = "none";
             }
         }
-
-        
-
         $(document).ready(function() {
             $('ul li').on('click', function() {
 
@@ -671,7 +537,6 @@
                     $('#navbar-collapse-1').removeClass('in')
                 }
             });
-
             $("#submit_btn").click(function() {
                 submit = 'submit';
                 emailval = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
@@ -710,7 +575,6 @@
                     $('#subbj').focus();
                     return;
                 }
-
                 $.ajax({
                 url: "send_email.php",
                 type: "POST",
