@@ -409,7 +409,7 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                 <div class="single-input-area">
-                                    <textarea placeholder="Write Your Message Here" name="msg" id="msg" ></textarea>
+                                    <textarea placeholder="Write Your Message Here" name="msg" id="msg" row="3" ></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="serverDiv" style="display: none;">
@@ -425,7 +425,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="accDiv" style="display: none;">
                                 <div class="single-input">
-                                    <input type="text" placeholder="Account Name*" name="accName" id="accName">
+                                    <input type="text" placeholder="Account Name*" name="accName" id="accName"rows="3">
                                 </div>
                             </div>
                         </div>
