@@ -67,11 +67,12 @@
                             <!-- <li><a href="#service-features">Features</a></li> -->
                             <li><a href="#project-product">Features</a></li>
                             <li><a href="#download">our platrofm</a></li>
+                            <li><a href="pages/devices.php">Products</a></li>
                             <!-- <li><a href="#our-client">Clients</a></li> -->
                             <li><a href="#parteners">Partners</a></li>
                             </li>
                             <li><a href="#contact-section">Contact</a></li>
-                        </ul>
+                        </ul>   
                     </div><!-- /.navbar-collapse -->
                 </nav> <!-- /.theme-feature-menu -->
             </div>

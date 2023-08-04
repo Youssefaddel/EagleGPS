@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>64B1BB178A32BA3233D7607B</RequestId>
+  <HostId>ueeshop.oss-us-west-1.aliyuncs.com</HostId>
+  <Key>static/images/ico/icon_attr_qty_arrow.png</Key>
+  <EC>0026-00000001</EC>
+</Error>
