@@ -67,7 +67,7 @@
                             <!-- <li><a href="#service-features">Features</a></li> -->
                             <li><a href="#project-product">Features</a></li>
                             <li><a href="#download">our platrofm</a></li>
-                            <li><a href="pages/devices.html">Products</a></li>
+                            <li><a href="javascript:void(0);" onclick="redirectToHiddenFolder();">Products</a></li>
                             <!-- <li><a href="#our-client">Clients</a></li> -->
                             <li><a href="#parteners">Partners</a></li>
                             </li>
@@ -616,6 +616,18 @@
                 });
             });
         });
+
+
+        
     </script>
+
+<script>
+  function redirectToHiddenFolder() {
+    window.location.href = 'pages/devices.html';
+  }
+</script>
+
+<a href="javascript:void(0);" onclick="redirectToHiddenFolder();">Go to Page</a>
+
 </body>
 </html>
